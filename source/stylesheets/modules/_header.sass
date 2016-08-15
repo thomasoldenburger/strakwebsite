@@ -1,0 +1,42 @@
+.mod-header
+  background: white
+  .navigation
+    display: flex
+    height: 60px
+    justify-content: space-between
+    .logo
+      padding: 1em 0
+      img
+        height: 36px
+    .menu
+      display: flex
+      align-items: center
+      ul
+        display: inline-flex
+        li
+          cursor: pointer
+          height: 60px
+          display: flex
+          align-items: center
+          padding: 0 2em
+          &:hover a
+            color: $text
+          a
+            color: lighten($text, 50%)
+            font-weight: 300
+            font-size: 14px
+          &.toggle
+            padding: 0 5em 0 3em
+            border-left: 1px solid $grey
+            border-right: 1px solid $grey
+            position: relative
+            &:hover
+              background: $light-white
+            &:after
+              top: 17px
+              content: url('../images/menu.svg')
+              position: absolute
+            a
+              font-weight: 600
+              color: $text
+              padding-right: 1em

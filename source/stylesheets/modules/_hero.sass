@@ -1,12 +1,41 @@
 .mod-hero
-  display: flex
   background: url('../images/headerbg.jpg')
-  height: 624px
-  text-align: center
+  height: 650px
+  background-size: cover
+  background-position: center center
+  overflow: hidden
   .container
-    align-items: center
-    justify-content: center
     display: flex
-    h1
-      margin-top: 1em
-      color: white
+    justify-content: flex-start
+    position: relative
+    .play
+      background: url('../images/playbutton.svg')
+      background-repeat: no-repeat
+      width: 108px
+      height: 108px
+      position: absolute
+      margin-left: -54px
+      margin-top: -54px
+      left: 50%
+      top: 50%
+      z-index: 9999
+      cursor: pointer
+    .overlay
+      background: rgba(255,255,255,.2)
+      width: 50%
+      height: 650px
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      .wrapper
+        display: flex
+        flex-flow: row wrap
+        padding: 72px
+        h1
+          color: white
+          margin-bottom: 48px
+          strong
+            font-weight: 600
+
+
+

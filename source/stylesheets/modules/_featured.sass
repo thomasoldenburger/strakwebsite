@@ -1,37 +1,24 @@
 .mod-featured
-  background: white
-  .container-fluid
-    display: flex
-    .featured-item
+  .featured-items
+    background: red
+    .item
       display: flex
-      align-items: flex-end
-      justify-content: flex-end
-      height: 504px
-      width: 50%
-      background-position: center center
-      background-size: cover
-      &.academy
-        background: url('../images/featuredacademy.png')
-      &.stars
-        background: url('../images/featuredstars.png')
-      .wrapper
-        padding: 6em
+      height: 400px
+      &.reverse
+        flex-direction: row-reverse
+      .featured-img
+        background: url(../images/academy-mock.jpg)
+        background-size: cover
+        background-position: center top
+        &.sales
+          background: url(../images/sales-mock.jpg)
+          background-size: cover
+          background-position: center top
+      .description
         display: flex
-        flex-flow: column wrap
-        h2
-          padding: 12px 24px
-          background: rgba(0, 0, 0, 0.7)
-          color: white
-        a
-          align-self: flex-end
-          text-align: right
-          line-height: 0px
-          font-size: 13px
-          color: white
-          background: $blue
-          font-weight: 700
-          text-transform: uppercase
-          padding: 26px 84px 24px 24px
-          position: relative
-          &:after
-            +arrow
+        align-items: center
+        flex-flow: row wrap
+        padding: 0 72px
+        background: $light-white
+        p
+          opacity: .8

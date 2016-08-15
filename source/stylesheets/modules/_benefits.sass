@@ -1,0 +1,26 @@
+.mod-benefits
+  background: white
+  display: flex
+  .items
+    display: flex
+    flex-flow: row wrap
+    a
+      width: 100%
+      .item
+        display: flex
+        align-items: center
+        width: 100%
+        padding: 48px 0 48px 72px
+        border-bottom: 1px solid $border
+        h2
+          padding: 0 0 0 36px
+          color: $text
+        &.active
+          background: $blue
+          h2
+            color: white
+
+  .list
+    background: $blue-light
+    display: flex
+    width: 100%

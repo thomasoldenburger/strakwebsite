@@ -1,4 +1,76 @@
 .mod-footer
-
-
+  background: white
+  padding: 120px 0
+  .row
+    display: flex
+    .col-3
+      flex: 1
+      h4
+        margin-bottom: 24px
+      a
+        &:hover
+          color: $pink
+      ul
+        margin-bottom: 24px
+        &:before
+          display: block
+          position: absolute
+          content: ''
+        &.location
+          padding-left: 36px
+          position: relative
+          li
+            &:nth-child(1)
+              font-weight: 600
+          &:before
+            left: 0
+            top: 6px
+            width: 16px
+            height: 24px
+            background-image: url('../images/locationmarker.svg')
+        &.email
+          position: relative
+          padding-left: 36px
+          margin-bottom: 48px
+          li
+            font-weight: 600
+            a
+              color: $black
+              &:hover
+                color: $pink
+          &:before
+            left: 0
+            top: 4px
+            width: 21px
+            height: 16px
+            background-image: url('../images/email.svg')
+        &.number
+          padding-left: 36px
+          position: relative
+          &:before
+            left: 0
+            top: 6px
+            width: 18px
+            height: 24px
+            background-image: url('../images/mobile.svg')
+          li
+            &:hover
+              color: $pink
+        li
+          font-size: 14px
+          font-weight: 300
+          line-height: 24px
+          color: $text
+          span
+            font-weight: 600
+            margin-left: 24px
+        &.jobs
+          li
+            &:nth-child(1)
+              font-weight: 300
+            a
+              font-weight: 600
+              color: $black
+              &:hover
+                color: $pink
 

@@ -7,10 +7,14 @@
       width: 33.33333%
       background: white
       .news-img
-        background: url('../images/news1.jpg')
+        background: url('../images/news2.jpg')
         height: 240px
         background-size: cover
         background-position: center center
+        &.producttrainer
+          background: url('../images/news1.jpg')
+          background-size: cover
+          background-position: center center
       .wrapper
         padding: 36px 36px 72px 36px
         h2
@@ -31,3 +35,16 @@
               font-weight: 700
 
 
+@media all and (max-width: 976px)
+  .mod-uitgelicht
+    padding: 60px 0
+    .row
+      flex-flow: column wrap
+      .item
+        width: 100%
+        .news-img
+          height: 136px
+        .wrapper
+          padding: 36px
+          p
+            display: none

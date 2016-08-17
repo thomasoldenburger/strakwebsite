@@ -2,6 +2,8 @@
   background: white
   display: flex
   margin-bottom: 60px
+  .items > .list
+    display: none
   .items
     display: flex
     flex-flow: row wrap
@@ -66,3 +68,33 @@
           border: 1px solid white
         &:nth-last-child(1)
           margin: 0
+
+@media all and (max-width: 768px)
+  .mod-benefits
+    flex-flow: column wrap
+    .col-6 > .list
+      display: none
+    .items
+      .list
+        display: block
+        padding: 36px 36px 36px 60px
+        ul
+          li
+            font-size: 16px
+            line-height: 32px
+            &:before
+              width: 13px
+              height: 13px
+              top: 9px
+              left: -30px
+      a
+        .item
+          padding: 12px 0
+          &.active
+            border: none
+          h2
+            font-size: 18px
+            padding-left: 12px
+          img
+            padding-left: 30px
+            height: 24px

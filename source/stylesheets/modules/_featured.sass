@@ -22,3 +22,19 @@
         background: $light-white
         p
           opacity: .8
+
+
+
+@media all and (max-width: 768px)
+  .mod-featured
+    .featured-items
+      .item
+        display: block
+        height: auto
+        &.reverse
+          flex-direction: row
+          display: block
+        .featured-img
+          height: 216px
+        .description
+          padding: 60px 30px

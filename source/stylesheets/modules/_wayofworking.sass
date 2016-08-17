@@ -63,12 +63,17 @@
         position: relative
         justify-content: center
         align-items: center
+        cursor: pointer
       .previous
         background: $black
+        &:hover
+          background: darken($black, 5%)
         &:after
           content: url('../images/btnprev.svg')
       .next
         background: $blue
+        &:hover
+          background: darken($blue, 5%)
         &:after
           content: url('../images/btn-arrow.svg')
 

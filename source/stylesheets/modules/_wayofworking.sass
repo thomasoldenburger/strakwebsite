@@ -1,0 +1,33 @@
+.mod-wayofworking
+  background: $black
+  padding: 120px 0
+  text-align: center
+  h2
+    color: white
+    margin-bottom: 60px
+  .steps
+    display: flex
+    align-items: baseline
+    .step
+      flex: 1
+      display: flex
+      justify-content: center
+      flex-flow: row wrap
+      text-align: center
+      padding: 0 24px
+      position: relative
+      &:after
+        right: -48px
+        top: 36px
+        content: ""
+        height: 3px
+        width: 96px
+        background: white
+        position: absolute
+      &:nth-last-child(1)
+        &:after
+          display: none
+      img
+        margin-bottom: 24px
+      p
+        color: white

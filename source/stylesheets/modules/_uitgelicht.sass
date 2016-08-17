@@ -1,26 +1,30 @@
 .mod-uitgelicht
-  padding: 8em 0
-  background: #f1f1f1
+  padding: 120px 0 120px 0
   .row
     display: flex
     margin-top: 4em
     .item
       width: 33.33333%
       background: white
-      img
-        width: 100%
+      .news-img
+        background: url('../images/news1.jpg')
+        height: 240px
+        background-size: cover
+        background-position: center center
       .wrapper
-        padding: 48px
+        padding: 36px 36px 72px 36px
         h2
           line-height: 36px
           margin-bottom: 12px
+        .link
+          margin: 12px 0
       &.info
         background: $blue
         display: flex
         align-items: center
         justify-content: center
         .wrapper
-          padding: 6em
+          padding: 48px
           h1
             color: white
             strong

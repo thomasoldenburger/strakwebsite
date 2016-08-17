@@ -1,0 +1,68 @@
+.mod-benefits
+  background: white
+  display: flex
+  margin-bottom: 60px
+  .items
+    display: flex
+    flex-flow: row wrap
+    a
+      width: 100%
+      .item
+        display: flex
+        align-items: center
+        width: 100%
+        padding: 48px 0
+        border-bottom: 1px solid $border
+        position: relative
+        cursor: pointer
+        &:nth-last-child(0)
+          border: none
+        img
+          padding-left: 72px
+        h2
+          padding: 0 0 0 36px
+          color: $text
+        &.active
+          background: $blue
+          h2
+            color: white
+          &:after
+            left: 100%
+            top: 50%
+            border: solid transparent
+            content: ""
+            height: 0
+            width: 0
+            position: absolute
+            pointer-events: none
+            border-color: rgba(32, 118, 218, 0)
+            border-left-color: #2076DA
+            border-width: 18px
+            margin-top: -18px
+
+  .list
+    background: $blue-light
+    display: flex
+    width: 100%
+    padding: 0 72px 0 120px
+    align-items: center
+    justify-content: center
+    ul
+      li
+        color: white
+        font-size: 24px
+        line-height: 36px
+        font-weight: 300
+        margin-bottom: 36px
+        position: relative
+        &:before
+          content: ""
+          width: 21px
+          height: 21px
+          border-radius: 100%
+          position: absolute
+          top: 6px
+          left: -48px
+          border: 1px solid white
+        &:nth-last-child(1)
+          margin: 0

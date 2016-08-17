@@ -1,0 +1,44 @@
+.menu-coll
+  background: $black
+  position: fixed
+  right: 0
+  top: 0
+  width: 25%
+  height: 100%
+  ul
+    padding: 60px
+    a
+      padding: 24px 0
+      position: relative
+      &.active
+        position: relative
+        &:before
+          background: $pink
+          height: 7px
+          width: 7px
+          position: absolute
+          content: ""
+          left: -24px
+          top: 30px
+          transform: rotate(45deg)
+      &:hover
+        &:before
+          background: $pink
+          height: 7px
+          width: 7px
+          position: absolute
+          content: ""
+          left: -24px
+          top: 30px
+          transform: rotate(45deg)
+      li
+        font-size: 22px
+        font-weight: 100
+        padding: 24px 0
+        color: white
+  .logo
+    padding: 36px 0
+    background: #464646
+    img
+      margin-left: 48px
+

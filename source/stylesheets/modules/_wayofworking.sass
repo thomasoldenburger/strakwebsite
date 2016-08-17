@@ -2,6 +2,7 @@
   background: $black
   padding: 120px 0
   text-align: center
+  position: relative
   h2
     color: white
     margin-bottom: 60px
@@ -31,3 +32,64 @@
         margin-bottom: 24px
       p
         color: white
+  .pager
+    display: none
+    position: absolute
+    bottom: 0
+    background: white
+    width: 100%
+    align-items: center
+    justify-content: space-between
+    .indicator
+      margin-left: 30px
+      ul
+        display: flex
+        li
+          font-weight: 600
+          font-size: 16px
+          &.current
+            color: $blue
+            &:after
+              content: "/"
+              color: $black
+              padding: 0 3px
+
+    .controlls
+      display: flex
+      .previous, .next
+        width: 70px
+        height: 70px
+        display: flex
+        position: relative
+        justify-content: center
+        align-items: center
+      .previous
+        background: $black
+        &:after
+          content: url('../images/btnprev.svg')
+      .next
+        background: $blue
+        &:after
+          content: url('../images/btn-arrow.svg')
+
+@media all and (max-width: 768px)
+  .mod-wayofworking
+    padding: 60px 0 120px 0
+    .steps
+      flex-flow: column wrap
+      align-items: center
+      .step
+        display: none
+        text-align: center
+        &:nth-child(1)
+          display: flex
+          flex-flow: column wrap
+          align-items: center
+          p
+            width: 70%
+        &:after
+          right: 30px
+          p
+            width: 70%
+    .pager
+      display: flex

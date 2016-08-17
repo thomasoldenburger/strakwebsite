@@ -41,6 +41,20 @@
             border-left-color: #2076DA
             border-width: 18px
             margin-top: -18px
+      .toggle
+        width: 27px
+        height: 27px
+        background-repeat: no-repeat
+        position: absolute
+        right: 12px
+        display: none
+        top: 18px
+        color: red
+        &.opened
+          background: url('../images/arrowopened.svg')
+        &.closed
+          background: url('../images/arrowclosed.svg')
+
 
   .list
     background: $blue-light
@@ -92,9 +106,13 @@
           padding: 12px 0
           &.active
             border: none
+            &:after
+              display: none
           h2
             font-size: 18px
             padding-left: 12px
           img
             padding-left: 30px
             height: 24px
+        .toggle
+          display: flex

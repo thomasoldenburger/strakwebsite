@@ -4,7 +4,8 @@
   .row
     display: flex
     .col-3
-      flex: 1
+      max-width: 25%
+      flex-basis: 25%
       h4
         margin-bottom: 24px
       a
@@ -74,3 +75,17 @@
               &:hover
                 color: $pink
 
+
+@media all and (max-width: 976px)
+  .mod-footer
+    text-align: center
+    .row
+      justify-content: center
+      flex-flow: column wrap
+      .col-3
+        margin: 60px 0
+        display: flex
+        flex-flow: column wrap
+        justify-content: center
+        max-width: 50%
+        flex-basis: 50%

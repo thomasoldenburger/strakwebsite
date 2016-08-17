@@ -23,7 +23,7 @@
     .overlay
       background: rgba(255,255,255,.2)
       width: 50%
-      height: 650px
+      height: 462px
       display: flex
       align-items: center
       justify-content: flex-start
@@ -37,5 +37,22 @@
           strong
             font-weight: 600
 
-
+@media all and (max-width: 768px)
+  .mod-hero
+    height: 570px
+    display: flex
+    align-items: center
+    padding: 0 0 48px 0
+    .container
+      .play
+        background-size: 75%
+        top: 100%
+        margin:  -40px 0 0 -40px
+      .overlay
+        width: 100%
+        height: auto
+        .wrapper
+          padding: 48px
+          .btn
+            margin-bottom: 72px
 

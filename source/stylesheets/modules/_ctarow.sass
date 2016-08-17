@@ -12,8 +12,13 @@
       color: white
       font-size: 14px
       font-weight: 700
-      position: relative
-      &:after
-        +arrow
-        top: -6px
-        right: -60px
+      display: flex
+      align-items: center
+      img
+        margin-left: 48px
+
+@media all and (max-width: 768px)
+  .mod-ctarow
+    .cta
+      a
+        margin-left: 30px

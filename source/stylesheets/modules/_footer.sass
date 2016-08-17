@@ -3,7 +3,11 @@
   padding: 120px 0
   .row
     display: flex
-    .col-3
+    .mobilecontact
+      display: none
+      .btn
+        margin: 0px 0 12px 0
+    .col-4
       max-width: 25%
       flex-basis: 25%
       h4
@@ -76,16 +80,39 @@
                 color: $pink
 
 
+
+
 @media all and (max-width: 976px)
   .mod-footer
-    text-align: center
+    padding: 60px 0
     .row
       justify-content: center
       flex-flow: column wrap
-      .col-3
-        margin: 60px 0
+      .mobilecontact
+        display: flex
+        .btn-sec
+          display: flex
+          flex-direction: row-reverse
+          justify-content: flex-end
+          img
+            margin-right: 24px
+        .btn img
+          padding: 0
+
+      .col-4
+        margin: 30px 0
         display: flex
         flex-flow: column wrap
         justify-content: center
-        max-width: 50%
-        flex-basis: 50%
+        max-width: 100%
+        &.mobilecontact
+          order: 0
+        &.logo
+          align-items: flex-start
+          order: 4
+        &.work
+          order: 2
+        &.visit
+          order: 1
+        &.contactus
+          display: none

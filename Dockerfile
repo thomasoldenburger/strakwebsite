@@ -1,2 +1,6 @@
-FROM nginx
-COPY build /usr/share/nginx/html
+FROM node:latest
+WORKDIR /app/
+COPY package.json server.js /app/
+RUN npm install
+COPY build /app/build
+ENTRYPOINT ["node","server.js"]

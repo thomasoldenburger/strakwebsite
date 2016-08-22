@@ -3,10 +3,9 @@
   padding: 120px 0
   .row
     display: flex
-    .mobilecontact
+    &.mobilefooter
       display: none
-      .btn
-        margin: 0px 0 12px 0
+      flex-flow: column wrap
     .col-4
       max-width: 25%
       flex-basis: 25%
@@ -88,8 +87,13 @@
     .row
       justify-content: center
       flex-flow: column wrap
-      .mobilecontact
-        display: flex
+      &.footer
+        display: none
+      &.mobilefooter
+        display: block
+        flex-flow: column wrap
+        .btn
+          margin-bottom: 12px
         .btn-sec
           display: flex
           flex-direction: row-reverse
@@ -106,14 +110,6 @@
         flex-flow: column wrap
         justify-content: center
         max-width: 100%
-        &.mobilecontact
-          order: 0
         &.logo
           align-items: flex-start
-          order: 4
-        &.work
-          order: 2
-        &.visit
-          order: 1
-        &.contactus
-          display: none
+

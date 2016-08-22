@@ -1,0 +1,27 @@
+.mod-breadcrumbs
+  background: $black
+  .container
+    display: flex
+    height: 60px
+    align-items: center
+    ul
+      padding: 0 60px
+      li
+        display: inline-block
+        margin-right: 108px
+        position: relative
+        &:after
+          color: white
+          font-size: 16px
+          top: 1px
+          margin-left: 48px
+          content: ">"
+          position: absolute
+        &:nth-last-child(1)
+          &:after
+            display: none
+        a
+          color: white
+          font-size: 16px
+          &:hover
+            color: $pink

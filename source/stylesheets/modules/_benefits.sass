@@ -17,6 +17,8 @@
         border-bottom: 1px solid $border
         position: relative
         cursor: pointer
+        &.large
+          padding: 72px 0
         &:nth-last-child(0)
           border: none
         img
@@ -54,8 +56,12 @@
           background: url('../images/arrowopened.svg')
         &.closed
           background: url('../images/arrowclosed.svg')
-
-
+  .img
+    width: 100%
+    background-repeat: no-repeat
+    background-color: #ECECEC
+    background-size: 75%
+    background-position: center center
   .list
     background: $blue-light
     display: flex

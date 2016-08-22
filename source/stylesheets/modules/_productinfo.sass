@@ -1,0 +1,67 @@
+.mod-productinfo
+  background: #F2F2F2
+  .container
+    .wrapper
+      display: flex
+      .description
+        width: 50%
+        padding-left: 60px
+        display: flex
+        align-items: center
+      .metrics
+        margin: -72px 60px 0 72px
+        background: white
+        width: 40%
+        margin-bottom: 48px
+        h4
+          text-transform: uppercase
+          font-weight: 700
+          height: 72px
+          display: flex
+          align-items: center
+          padding-left: 48px
+          border-bottom: 1px solid #D8D8D8
+        .items
+          padding: 48px
+          display: flex
+          flex-flow: row wrap
+          position: relative
+          align-items: center
+          justify-content: center
+          &:before
+            content: ""
+            transform: rotate(45deg)
+            padding: 18px
+            box-sizing: border-box
+            background: white
+            position: absolute
+          &:after
+            content: ""
+            width: 10px
+            height: 10px
+            transform: rotate(45deg)
+            background: #D8D8D8
+            position: absolute
+          .item
+            box-sizing: border-box
+            width: 50%
+            text-align: center
+            padding: 24px 0
+            header
+              font-size: 44px
+              font-weight: 700
+            span
+              font-size: 16px
+              line-height: 24px
+              color: $black
+            &:nth-child(1)
+              border-bottom: 1px solid #D8D8D8
+              border-right: 1px solid #D8D8D8
+            &:nth-last-child(1)
+              border-top: 1px solid #D8D8D8
+              border-left: 1px solid #D8D8D8
+    .preview
+      height: 460px
+      background-size: cover
+      background-position: center center
+      margin-left: 72px

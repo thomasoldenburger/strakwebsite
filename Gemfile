@@ -13,3 +13,4 @@ gem "middleman-autoprefixer"
 gem 'bootstrap-sass', '~> 3.3.1'
 gem "jquery-middleman"
 gem 'font-awesome-sass'
+gem 'middleman-imageoptim'

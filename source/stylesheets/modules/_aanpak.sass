@@ -1,0 +1,32 @@
+.mod-aanpak
+  margin-bottom: 120px
+  .row
+    display: flex
+    height: 540px
+    width: 100%
+    &.reverse
+      flex-direction: row-reverse
+    .col-6
+      max-width: 50%
+      flex-shrink: 0
+      &.content
+        background: $pink
+        display: flex
+        align-items: center
+        &.white
+          background-color: white
+          .wrapper
+            h2
+              color: $black
+            p
+              color: $black
+        .wrapper
+          padding: 72px
+          h2
+            margin-bottom: 24px
+            color: white
+          p
+            color: white
+      &.img
+        background-size: cover
+        background-position: center center

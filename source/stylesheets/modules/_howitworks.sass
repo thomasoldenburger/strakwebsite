@@ -1,0 +1,154 @@
+.mod-howitworks
+  background: white
+  display: flex
+  margin-bottom: 60px
+  .col-6.mobile
+    display: none
+  .items > .list
+    display: none
+  .items
+    display: flex
+    flex-flow: row wrap
+    a
+      width: 100%
+      .item
+        display: flex
+        align-items: center
+        width: 100%
+        padding: 48px 0
+        border-bottom: 1px solid $border
+        position: relative
+        cursor: pointer
+        &.large
+          padding: 72px 0
+        &:nth-last-child(0)
+          border: none
+        img
+          padding-left: 72px
+        h2
+          padding: 0 0 0 36px
+          color: $text
+        &.active
+          background: $blue
+          h2
+            color: white
+          &:after
+            left: 100%
+            top: 50%
+            border: solid transparent
+            content: ""
+            height: 0
+            width: 0
+            position: absolute
+            pointer-events: none
+            border-color: rgba(32, 118, 218, 0)
+            border-left-color: #2076DA
+            border-width: 18px
+            margin-top: -18px
+      .toggle
+        width: 27px
+        height: 27px
+        background-repeat: no-repeat
+        position: absolute
+        right: 12px
+        display: none
+        top: 18px
+        color: red
+        &.opened
+          background: url('../images/arrowopened.svg')
+        &.closed
+          background: url('../images/arrowclosed.svg')
+  .img
+    width: 100%
+    background-repeat: no-repeat
+    background-color: #ECECEC
+    background-size: 75%
+    background-position: center center
+  .list
+    background: $blue-light
+    display: flex
+    width: 100%
+    padding: 0 72px 0 120px
+    align-items: center
+    justify-content: center
+    ul
+      li
+        color: white
+        font-size: 24px
+        line-height: 36px
+        font-weight: 300
+        margin-bottom: 36px
+        position: relative
+        &:before
+          content: ""
+          width: 21px
+          height: 21px
+          border-radius: 100%
+          position: absolute
+          top: 6px
+          left: -48px
+          border: 1px solid white
+        &:nth-last-child(1)
+          margin: 0
+
+@media all and (max-width: 768px)
+  .mod-howitworks
+    flex-flow: column wrap
+    .mobilesteps
+      background: $blue
+      height: 190px
+      position: relative
+      &:after
+        top: 99%
+        left: 50%
+        border: solid transparent
+        content: " "
+        height: 0
+        width: 0
+        position: absolute
+        pointer-events: none
+        border-color: rgba(213, 55, 23, 0)
+        border-top-color: $blue
+        border-width: 12px
+        margin-left: -12px
+      ul
+        display: flex
+        padding-top: 48px
+        li
+          cursor: pointer
+          flex: 1
+          justify-content: center
+          display: flex
+          position: relative
+          &:after
+            content: ""
+            position: absolute
+            height: 2px
+            width: 75px
+            background-color: white
+            right: -38px
+            top: 18px
+          &:nth-last-child(1)
+            &:after
+              display: none
+          a
+            background: white
+            border-radius: 100%
+            width: 36px
+            height: 36px
+            color: $blue
+            display: flex
+            align-items: center
+            justify-content: center
+            font-weight: 700
+            font-size: 20px
+      p
+        color: white
+        text-align: center
+        padding: 30px 0 0 0
+    .col-6.desktop
+      display: none
+    .col-6.mobile
+      display: block
+    .img
+      height: 340px

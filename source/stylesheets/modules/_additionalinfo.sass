@@ -1,5 +1,7 @@
 .mod-additionalinfo
   margin: 90px 0
+  &.successtories
+    margin: -160px 0 60px 0
   .row
     display: flex
     height: 540px
@@ -7,8 +9,6 @@
     &.reverse
       flex-direction: row-reverse
     .col-6
-      max-width: 50%
-      flex-shrink: 0
       &.content
         background: $pink
         display: flex
@@ -30,3 +30,20 @@
       &.img
         background-size: cover
         background-position: center center
+
+
+@media all and (max-width: 768px)
+  .mod-additionalinfo
+    .row
+      height: auto
+      flex-flow: row wrap
+      margin-bottom: 30px
+      &:nth-last-child(1)
+        margin-bottom: 0
+      .img
+        height: 240px
+      .col-6
+        &.content
+          .wrapper
+            padding: 36px
+

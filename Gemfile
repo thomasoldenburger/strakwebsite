@@ -6,6 +6,5 @@ gem "middleman"
 gem "slim"
 gem "middleman-autoprefixer"
 gem 'font-awesome-sass'
-gem 'middleman-imageoptim'
 gem "middleman-sprockets", github: "middleman/middleman-sprockets",      branch: "master"
 gem 'sass-globbing', '~> 1.1'

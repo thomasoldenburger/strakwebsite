@@ -1,7 +1,6 @@
 ---
 layout: homepage
 ---
-
   section.mod-hero.small style="background-image: url(/images/leaplines-academy.jpg)"
   .page
     section.mod-breadcrumbs
@@ -10,17 +9,17 @@ layout: homepage
           li
             a href="/index.html" Home
           li
-            a href="/producten.html" Producten
+            a href="/producten/" Producten
           li
             a href="/producten/learning-groups.html" Learning Groups
     section.pagetitle
-      h1 Learning Groups
+      h1=product.title
     .splitline
     section.mod-productinfo
       .container
         .wrapper
           .description
-            p.l Een online platform die het leertraject van jouw medewerkers ondersteund op een leuke en snelle manier. Overal en op elk moment van de dag.
+            p.l=product.leader
           .metrics
             h4 Info academy
             .items

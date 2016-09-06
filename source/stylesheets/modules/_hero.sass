@@ -5,10 +5,25 @@
   overflow: hidden
   display: flex
   &.contact
+    padding: 0
+    height: 700px
+    align-items: flex-start
     .overlay
-      p
-        color: white
-        margin-bottom: 24px
+      height: 512px !important
+      .wrapper
+        .btn
+          margin-bottom: 0px !important
+
+    // align-items: center
+    // .overlay
+    //   .wrapper
+    //     padding: 36px !important
+    //     p
+    //       color: white
+    //       margin-bottom: 24px
+    //     a
+    //       margin-bottom: 0px !important
+
   &.small
     height: 680px
     align-items: center
@@ -62,6 +77,14 @@
     display: flex
     align-items: center
     padding: 0 0 48px 0
+    &.contact
+      position: relative
+      .container
+        position: initial
+        .overlay
+          position: absolute
+          top: 95px
+          left: 0
     &.small
       padding: 0
       height: 490px
@@ -80,3 +103,5 @@
           .btn
             margin-bottom: 72px
 
+  .mod-hero.contact
+    align-items: center !important

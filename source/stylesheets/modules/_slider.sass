@@ -45,3 +45,27 @@
             background: darken($blue, 5%)
           &:after
             content: url('../images/btn-arrow.svg')
+
+
+@media all and (max-width: 768px)
+  .flexslider
+    .container
+      padding: 0
+      .slides
+        li
+          img
+            height: 240px
+            object-fit: cover
+          .flex-caption
+            height: 70px
+            margin-top: 70px
+            font-size: 13px
+            margin: 0
+            padding-left: 24px
+        .pager
+          margin: 0
+          height: 70px
+          .controlls
+            .previous, .next
+              height: 70px
+              width: 70px

@@ -30,3 +30,22 @@
       &.img
         background-size: cover
         background-position: center center
+
+@media all and (max-width: 768px)
+  .mod-aanpak
+    margin-bottom: 60px
+    .row
+      flex-flow: row wrap
+      height: 100%
+      margin-bottom: 36px
+      &:nth-last-child(1)
+        margin-bottom: 0px !important
+      .col-6
+        max-width: 100%
+        width: 100%
+        flex-basis: 100%
+        &.content
+          .wrapper
+            padding: 36px !important
+        &.img
+          height: 240px

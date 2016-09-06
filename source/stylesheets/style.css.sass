@@ -19,6 +19,9 @@ body
     margin: 0 auto
 .row
   display: flex
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
 
 .container
   margin: 0 auto
@@ -140,12 +143,29 @@ body
   .container
     padding: 0 30px
 
-  .col-6
+  .col-6, .col-4
     width: 100%
     flex-basis: 100%
     max-width: 100%
+
+  .col-7
+    width: 100%
+    flex-basis: 100%
+    max-width: 100%
+
+  .col-5
+    width: 100%
+    flex-basis: 100%
+    max-width: 100%
+
+  .push-1, .push-2
+    margin: 0
 
   .col-3
     width: 100%
     flex-basis: 100%
     max-width: 100%
+
+  .text
+    .row
+      flex-flow: column wrap

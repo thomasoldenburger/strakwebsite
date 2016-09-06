@@ -58,11 +58,16 @@ set :css_dir,    'stylesheets'
 set :js_dir,     'javascripts'
 set :images_dir, 'images'
 
-activate :autoprefixer
+# activate :autoprefixer
 activate :sprockets
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 9']
+  config.ignore   = ['/stylesheets/hacks.css']
+end
+
 configure :build do
-  activate :minify_css
-  activate :minify_javascript
-  activate :asset_hash
+  # activate :minify_css
+  # activate :minify_javascript
+  # activate :asset_hash
 end

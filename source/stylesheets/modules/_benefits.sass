@@ -1,8 +1,9 @@
 .mod-benefits
   background: white
-  display: block
   margin-bottom: 60px
-  .items > .list
+  display: flex
+  display: -webkit-box
+  .items .list
     display: none
   .items
     display: flex
@@ -92,7 +93,7 @@
 @media all and (max-width: 768px)
   .mod-benefits
     flex-flow: column wrap
-    .col-6 > .list
+    .col-6.kill
       display: none
     .items
       .list

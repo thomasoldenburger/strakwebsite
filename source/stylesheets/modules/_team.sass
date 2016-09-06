@@ -21,7 +21,28 @@
     .team
       padding: 48px 0
       flex-flow: row wrap
+      display: flex
       .member
         flex-basis: 33.3333%
+        width: 33.33333%
         height: 50%
         background-size: cover
+
+
+
+@media all and (max-width: 768px)
+  .mod-team
+    padding: 60px 0
+    .row
+      flex-flow: row wrap-reverse
+      &.reverse
+        margin-top: 36px
+      .content
+        height: 100%
+        .wrapper
+          padding: 36px
+        p
+          margin-bottom: 0
+      .team
+        height: 220px
+        padding: 0

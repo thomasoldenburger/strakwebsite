@@ -1,0 +1,88 @@
+.page404
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  @-webkit-keyframes rotating
+  from
+    -webkit-transform: rotate(0deg)
+
+  to
+    -webkit-transform: rotate(360deg)
+  .wrapper
+    width: 600px
+    display: flex
+    justify-content: center
+    text-align: center
+    flex-flow: column wrap
+    h1
+      font-weight: 100
+      padding: 36px 0 24px 0
+    .m
+      width: 400px
+      align-self: center
+    a
+      color: $pink
+      font-size: 18px
+      font-weight: 700
+      padding: 24px 0
+      &:hover
+        text-decoration: underline
+  .cloud1
+    position: absolute
+    top: 20px
+    right: 130px
+
+  .line1
+    position: absolute
+    left: -30px
+    bottom: 80px
+
+  .line2
+    position: absolute
+    top: 220px
+    right: -60px
+
+  .cloud2
+    position: absolute
+    top: -20px
+    left: 145px
+  .gear
+    position: absolute
+    top: 130px
+    right: -60px
+    animation: rotategear 5s infinite
+    animation-timing-function: linear
+    transform-origin: 50% 50%
+    display: inline-block
+
+    @keyframes rotategear
+      0%
+        transform: rotate(0deg)
+
+      100%
+        transform: rotate(360deg)
+  .hourglass
+    position: absolute
+    bottom: 0
+    left: -30px
+
+
+@media all and (max-width: 768px)
+  .page404
+    padding: 0 6%
+    .wrapper
+      width: 100%
+      h1
+        padding-left: 30px
+        padding-right: 30px
+        font-size: 20px
+        line-height: 24px
+      .m
+        width: 300px
+    .cloud1
+      right: 6%
+    .cloud2
+      left: 15%
+    .gear, .hourglass, .line1, .line2
+      display: none

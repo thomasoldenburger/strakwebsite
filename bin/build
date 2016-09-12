@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-rm -rf ./build && \
-bundle exec middleman build --verbose && \
-docker build -t registry.gitlab.com/emilebosch/website . && \
-docker push registry.gitlab.com/emilebosch/website

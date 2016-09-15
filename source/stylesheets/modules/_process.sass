@@ -1,27 +1,59 @@
 .mod-process
   background: white
-  padding: 120px 0 60px 48px
+  padding: 120px 0 120px 0
   margin: 60px 0 -90px 0
-  .term
+  h2
+    margin-left: 72px
+    margin-bottom: 48px
+  .row
+    flex-flow: row wrap
+    .terms
+      padding: 0 48px
+      display: flex
+      .col-6
+        padding: 0 24px
+        .term
+          margin-bottom: 60px
+          &:nth-last-child(1)
+            margin-bottom: 0
+          &:nth-child(1)
+            margin-top: 24px
+          h4
+            font-weight: 600
+            margin-bottom: 12px
+        img
+        width: 100%
+  .timeline
+    border-bottom: 2px dashed $border
     margin-bottom: 60px
-    &:nth-last-child(1)
-      margin-bottom: 0
-    &:nth-child(1)
-      margin-top: 60px
-    h4
-      font-weight: 600
-      margin-bottom: 12px
-  img
+    margin-top: 120px
     width: 100%
+    .markers
+      margin-bottom: -4px
+      display: flex
+      justify-content: space-around
+      .marker
+        display: flex
+        justify-content: center
+        flex: 1
 
 @media all and (max-width: 768px)
   .mod-process
     padding: 60px 0
-    .row
+    h2
+      margin: 0
+      margin-bottom: 24px
+    .row, .terms
       flex-flow: row wrap
-      .term
-        margin-bottom: 36px
-        h4
-          font-size: 16px
-      img
-        margin-left: 30px
+      .terms
+        padding: 0
+        .col-6
+          padding: 0
+          .term
+            margin-bottom: 36px
+            h4
+              font-size: 16px
+          img
+            margin-left: 30px
+    .timeline
+      display: none

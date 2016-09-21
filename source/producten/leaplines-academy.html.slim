@@ -73,6 +73,8 @@ layout: homepage
               a 2
             li
               a 3
+            li
+              a 4
           p.l Starten van een leertraject
       .col-6.flex
         .img style="background-image: url(/images/start-traject.png)"
@@ -96,7 +98,12 @@ layout: homepage
         h2 Stel je eigen leerpakket samen
     =partial "mods/mod-apps"
     =partial "mods/mod-benefits"
-    =partial "mods/mod-interested"
+    section.mod-interested
+      .container.small
+        h2 Geïnteresseerd geraakt?
+        a.btn.btn-s href="mailto:debora@leaplines.com?subject=Demo Leaplines Academy&body=Ik zou graag een demo-omgeving willen aanvragen van de Leaplines Academy."
+          | VRAAG EEN DEMO AAN
+          img src="/images/btn-arrow.svg" /
     =partial "mods/mod-recommended"
 
 

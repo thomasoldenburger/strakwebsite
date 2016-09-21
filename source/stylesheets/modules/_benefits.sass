@@ -29,6 +29,8 @@
           color: $text
         &.active
           background: $blue
+          &:hover
+            background-color: $blue
           #step-1.icon
             .wrapper
               polygon
@@ -69,48 +71,8 @@
             border-width: 18px
             margin-top: -18px
         &:hover
-          background: $blue
-          border-top-color: $blue
-          &:after
-            left: 100%
-            top: 50%
-            border: solid transparent
-            content: ""
-            height: 0
-            width: 0
-            position: absolute
-            pointer-events: none
-            border-color: rgba(32, 118, 218, 0)
-            border-left-color: #2076DA
-            border-width: 18px
-            margin-top: -18px
-          h2
-            color: white
+          background: #f9f9f9
 
-          #step-1.icon
-            .wrapper
-              polygon
-                stroke: white
-                fill: transparent
-          #step-4.icon
-            .wrapper
-              polygon
-                stroke: white
-                fill: transparent
-          .icon
-            path
-              stroke: white
-            polygon
-              fill: white
-            polyline
-              stroke: white
-            .inner
-              path
-                stroke: white
-            .wrapper
-              .inner
-                .circle
-                  stroke: #2076DA
       .toggle
         width: 27px
         height: 27px

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="38px" height="45px" viewBox="0 0 38 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg id="PT" class="icon" width="38px" height="45px" viewBox="0 0 38 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
     <title>Imported Layers</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <path d="M21.75,26.25 C21.555,26.25 21.363,26.1735 21.2205,26.0295 L14.25,19.0605 L7.2795,26.0295 C7.065,26.2455 6.744,26.3085 6.4635,26.193 C6.183,26.0775 6,25.803 6,25.5 L6,0.75 C6,0.336 6.336,0 6.75,0 L21.75,0 C22.164,0 22.5,0.336 22.5,0.75 L22.5,25.5 C22.5,25.803 22.317,26.0775 22.0365,26.193 C21.9435,26.232 21.846,26.25 21.75,26.25 L21.75,26.25 Z M14.25,17.25 C14.442,17.25 14.634,17.3235 14.7795,17.469 L21,23.6895 L21,1.5 L7.5,1.5 L7.5,23.6895 L13.719,17.469 C13.866,17.3235 14.058,17.25 14.25,17.25 L14.25,17.25 Z" id="path-1"></path>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g class="wrapper" id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="1.-Homepage" transform="translate(-424.000000, -1063.000000)">
             <g id="Imported-Layers" transform="translate(424.000000, 1063.000000)">
                 <path d="M0.75,45 C0.336,45 0,44.664 0,44.25 L0,2.25 C0,1.836 0.336,1.5 0.75,1.5 L6.75,1.5 C7.164,1.5 7.5,1.836 7.5,2.25 C7.5,2.664 7.164,3 6.75,3 L1.5,3 L1.5,43.5 L36,43.5 L36,3 L21.75,3 C21.336,3 21,2.664 21,2.25 C21,1.836 21.336,1.5 21.75,1.5 L36.75,1.5 C37.164,1.5 37.5,1.836 37.5,2.25 L37.5,44.25 C37.5,44.664 37.164,45 36.75,45 L0.75,45 Z" id="Fill-1" fill="#3D3D3F"></path>
-                <g id="Fill-2">
+                <g class="inner" id="Fill-2">
                     <use fill="#1573DD" fill-rule="evenodd" xlink:href="#path-1"></use>
                     <use xlink:href="#path-1"></use>
                 </g>

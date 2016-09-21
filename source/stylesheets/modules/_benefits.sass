@@ -15,20 +15,44 @@
         align-items: center
         width: 100%
         padding: 48px 0
-        border-bottom: 1px solid $border
+        border-top: 1px solid $border
         position: relative
         cursor: pointer
         &.large
           padding: 72px 0
         &:nth-last-child(0)
           border: none
-        img
+        img, svg
           padding-left: 72px
         h2
           padding: 0 0 0 36px
           color: $text
         &.active
           background: $blue
+          #step-1.icon
+            .wrapper
+              polygon
+                stroke: white
+                fill: transparent
+          #step-4.icon
+            .wrapper
+              polygon
+                stroke: white
+                fill: transparent
+          .icon
+            path
+              stroke: white
+            polygon
+              fill: white
+            polyline
+              stroke: white
+            .inner
+              path
+                stroke: white
+            .wrapper
+              .inner
+                .circle
+                  stroke: #2076DA
           h2
             color: white
           &:after
@@ -46,6 +70,7 @@
             margin-top: -18px
         &:hover
           background: $blue
+          border-top-color: $blue
           &:after
             left: 100%
             top: 50%
@@ -61,6 +86,31 @@
             margin-top: -18px
           h2
             color: white
+
+          #step-1.icon
+            .wrapper
+              polygon
+                stroke: white
+                fill: transparent
+          #step-4.icon
+            .wrapper
+              polygon
+                stroke: white
+                fill: transparent
+          .icon
+            path
+              stroke: white
+            polygon
+              fill: white
+            polyline
+              stroke: white
+            .inner
+              path
+                stroke: white
+            .wrapper
+              .inner
+                .circle
+                  stroke: #2076DA
       .toggle
         width: 27px
         height: 27px
@@ -135,8 +185,8 @@
           h2
             font-size: 18px
             padding-left: 12px
-          img
-            padding-left: 30px
+          img, svg
+            padding-left: 10px
             height: 24px
         .toggle
           display: flex

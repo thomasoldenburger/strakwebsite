@@ -13,6 +13,8 @@ window.onload = function() {
 
   var benefits = [].slice.call(document.querySelectorAll('.mod-benefits a'));
   benefits.forEach(addClickHandler);
+
+  addSlideHandlers();
 };
 
 var texts = {
@@ -37,5 +39,32 @@ function addClickHandler(item){
     });
     var list = document.querySelector('.mod-benefits .list');
     item.parentNode.insertBefore(list, item.nextSibling)
+  });
+}
+
+function addSlideHandlers(){
+  var previous = document.querySelector('.controlls .previous');
+  var next = document.querySelector('.controlls .next');
+
+  next.addEventListener('click', function(event) {
+    event.preventDefault();
+    var step = document.querySelector(".mod-wayofworking .steps .step.active");
+    if(step.nextSibling) {
+      step.classList.remove('active');
+      step.nextSibling.classList.add('active');
+      var ind = document.querySelector(".indicator .current");
+      ind.innerHTML = parseInt(ind.innerHTML) + 1
+    }
+  });
+
+  previous.addEventListener('click', function(event) {
+    event.preventDefault();
+    var step = document.querySelector(".mod-wayofworking .steps .step.active");
+    if(step.previousSibling) {
+      step.classList.remove('active');
+      step.previousSibling.classList.add('active');
+      var ind = document.querySelector(".indicator .current");
+      ind.innerHTML = parseInt(ind.innerHTML) - 1
+    }
   });
 }

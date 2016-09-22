@@ -82,12 +82,15 @@
 @media all and (max-width: 768px)
   .mod-wayofworking
     padding: 60px 0 120px 0
+    height: 300px
     .steps
       flex-flow: column wrap
       align-items: center
       .step
         display: none
         text-align: center
+        width: 100%
+        padding: 0
         &.active
           display: flex
           flex-flow: column wrap
@@ -95,6 +98,7 @@
           p
             width: 70%
         &:after
+          display: initial
           right: 30px
           p
             width: 70%

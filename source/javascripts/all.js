@@ -35,5 +35,7 @@ function addClickHandler(item){
         e.innerHTML = texts[topic][i];
       });
     });
+    var list = document.querySelector('.mod-benefits .list');
+    item.parentNode.insertBefore(list, item.nextSibling)
   });
 }

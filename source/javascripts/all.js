@@ -11,15 +11,14 @@ window.onload = function() {
       }
     });
 
-  var benefits = [].slice.call(document.querySelectorAll('.mod-benefits a'));
-  benefits.forEach(addClickHandler);
-
+  addBenefitHandlers();
   addSlideHandlers();
 };
 
-var texts = {
-  leaplines: [ 'bork', 'bork', 'bork', 'bork', 'bork' ],
-  employee:  [ 'foo', 'bar', 'baz', 'boa', 'bay']
+
+function addBenefitHandlers(){
+  var benefits = [].slice.call(document.querySelectorAll('.mod-benefits a'));
+  benefits.forEach(addClickHandler);
 }
 
 function addClickHandler(item){
@@ -27,18 +26,18 @@ function addClickHandler(item){
     event.preventDefault();
     [].slice.call(item.parentNode.children).forEach(function(e) {
       e.children[0].classList.remove('active');
+      e.children[0].children[2].classList.remove('opened');
+      e.children[0].children[2].classList.add('closed');
     });
     item.children[0].classList.add('active');
+    item.children[0].children[2].classList.remove('closed');
+    item.children[0].children[2].classList.add('opened');
 
-    var topic = item.getAttribute('data-item');
-    var lists = document.querySelectorAll('.mod-benefits .list ul');
-    [].slice.call(lists).forEach(function(list) {
-      [].slice.call(list.children).forEach(function(e, i) {
-        e.innerHTML = texts[topic][i];
-      });
-    });
-    var list = document.querySelector('.mod-benefits .list');
-    item.parentNode.insertBefore(list, item.nextSibling)
+    var big_list = document.querySelector('.mod-benefits .list.big');
+    big_list.innerHTML = item.nextSibling.innerHTML;
+    var list = document.querySelector('.mod-benefits .list.visible');
+    list.classList.remove('visible');
+    item.nextSibling.classList.add('visible');
   });
 }
 

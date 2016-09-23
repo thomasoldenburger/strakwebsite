@@ -27,8 +27,12 @@ function addClickHandler(item){
     event.preventDefault();
     [].slice.call(item.parentNode.children).forEach(function(e) {
       e.children[0].classList.remove('active');
+      e.children[0].children[2].classList.remove('opened');
+      e.children[0].children[2].classList.add('closed');
     });
     item.children[0].classList.add('active');
+    item.children[0].children[2].classList.remove('closed');
+    item.children[0].children[2].classList.add('opened');
 
     var topic = item.getAttribute('data-item');
     var lists = document.querySelectorAll('.mod-benefits .list ul');

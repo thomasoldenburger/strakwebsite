@@ -1,11 +1,13 @@
 .menu-coll
   visibility: hidden
+  transition: 1s
   background: $black
-  position: fixed
-  right: 0
-  top: 0
-  width: 25%
+  position: fixed !important
   height: 100%
+  right: -25vw
+  overflow: hidden
+  top: 0
+  min-width: 25vw
   ul
     padding: 60px
     a
@@ -44,10 +46,19 @@
       margin-left: 48px
 
 .menu-show
-  margin-right: 25vw
-  transition: .5s
+  transition: transform .4s ease .16s
+  transform: translateX(-25vw)
   .menu-coll
     visibility: visible
-    transition: .3s
-  .toggle
+    transition: 1s
+    position: fixed
 
+
+@media all and (max-width: 768px)
+  .menu-coll
+    z-index: 99999
+    margin-top: 60px
+    width: 100vw
+    right: 0
+  .menu-show
+    transform: translateX(0)

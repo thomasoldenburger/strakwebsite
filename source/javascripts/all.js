@@ -11,28 +11,46 @@ window.onload = function() {
       }
     });
 
+  addHowItWorksHandlers();
   addBenefitHandlers();
   addSlideHandlers();
 };
 
 
 function addBenefitHandlers(){
-  var benefits = [].slice.call(document.querySelectorAll('.mod-benefits a'));
-  benefits.forEach(addClickHandler);
+  var items = [].slice.call(document.querySelectorAll('.mod-benefits a'));
+  items.forEach(addBenefitHandler);
+  items.forEach(addClickHandler);
+}
+
+function addHowItWorksHandlers(){
+  var items = [].slice.call(document.querySelectorAll('.mod-howitworks a'));
+  items.forEach(addHowItWorksHandler);
+  items.forEach(addClickHandler);
 }
 
 function addClickHandler(item){
   item.addEventListener('click', function(event) {
     event.preventDefault();
     [].slice.call(item.parentNode.children).forEach(function(e) {
+      if(!e.children[0]){
+        return;
+      }
       e.children[0].classList.remove('active');
       e.children[0].children[2].classList.remove('opened');
       e.children[0].children[2].classList.add('closed');
     });
-    item.children[0].classList.add('active');
-    item.children[0].children[2].classList.remove('closed');
-    item.children[0].children[2].classList.add('opened');
+    if(item.children[0]){
+      item.children[0].classList.add('active');
+      item.children[0].children[2].classList.remove('closed');
+      item.children[0].children[2].classList.add('opened');
+    }
+  });
+}
 
+function addBenefitHandler(item){
+  item.addEventListener('click', function(event) {
+    event.preventDefault();
     var big_list = document.querySelector('.mod-benefits .list.big');
     big_list.innerHTML = item.nextSibling.innerHTML;
     var list = document.querySelector('.mod-benefits .list.visible');
@@ -41,9 +59,26 @@ function addClickHandler(item){
   });
 }
 
+function addHowItWorksHandler(item){
+  item.addEventListener('click', function(event) {
+    event.preventDefault();
+    var url = item.getAttribute('data-image');
+    if(!url){
+      console.log('No image attribute.');
+      return;
+    }
+    var bg_img = "url(" + url + ")";
+    var image = document.querySelector('.mod-howitworks .img');
+    image.style["background-image"] = bg_img;
+  });
+}
+
 function addSlideHandlers(){
   var previous = document.querySelector('.controlls .previous');
   var next = document.querySelector('.controlls .next');
+  if (!previous || !next) {
+    return;
+  }
 
   next.addEventListener('click', function(event) {
     event.preventDefault();

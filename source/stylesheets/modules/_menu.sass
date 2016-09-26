@@ -1,13 +1,14 @@
 .menu-coll
   visibility: hidden
-  transition: 1s
   background: $black
   position: fixed !important
   height: 100%
-  right: -25vw
+  right: 0
+  transition: transform .4s ease .16s
   overflow: hidden
   top: 0
-  min-width: 25vw
+  width: 25vw
+  border-left: 3px solid white
   ul
     padding: 60px
     a
@@ -40,18 +41,24 @@
         padding: 24px 0
         color: white
   .logo
+    position: absolute
+    bottom: 0
+    width: 100%
     padding: 36px 0
     background: #464646
     img
       margin-left: 48px
 
 .menu-show
-  transition: transform .4s ease .16s
-  transform: translateX(-25vw)
+  // transition: transform .4s ease .16s
+  // transform: translateX(-25vw)
+  margin-right: 25vw
   .menu-coll
     visibility: visible
-    transition: 1s
-    position: fixed
+    // transition: 1s
+    // position: fixed
+  .mod-header
+    right: 25vw
 
 
 @media all and (max-width: 768px)
@@ -60,5 +67,12 @@
     margin-top: 60px
     width: 100vw
     right: 0
+    ul
+      padding: 36px 60px
+    .logo
+      bottom: 60px !important
+      padding: 24px 0 !important
   .menu-show
-    transform: translateX(0)
+    margin-right: 0
+  .mod-header
+    right: 0 !important

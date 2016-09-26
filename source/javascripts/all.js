@@ -4,6 +4,7 @@ window.onload = function() {
   addBenefitHandlers();
   addSlideHandlers();
   addFlexSlideHandlers();
+  setInterval(function(){ slideAnimation(); }, 3000);
 };
 
 function addMenuHandlers(){
@@ -108,8 +109,6 @@ function addSlideHandlers(){
       ind.innerHTML = parseInt(ind.innerHTML) - 1
     }
   });
-
-  setInterval(function(){ slideAnimation(); }, 3000);
 }
 
 function next(el, seats) {

@@ -109,7 +109,7 @@ function addSlideHandlers(){
     }
   });
 
-  //setInterval(function(){ slideAnimation(); }, 3000);
+  setInterval(function(){ slideAnimation(); }, 3000);
 }
 
 function next(el, seats) {
@@ -134,6 +134,9 @@ function slideAnimation(){
   var carousel = document.querySelector(".carousel");
   var seats = document.querySelectorAll('.carousel .container');
   var el = document.querySelector('.carousel .is-ref');
+  if(!carousel || !seats || !el){
+    return;
+  }
   el.classList.remove('is-ref');
   var new_seat = next(el, seats);
   new_seat.classList.add('is-ref');

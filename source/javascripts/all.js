@@ -150,13 +150,19 @@ function slideAnimation(){
 }
 
 function addFlexSlideHandlers(){
-  var next = document.querySelector('.flexslider .next')
+  var next = document.querySelector('.flexslider .next');
+  if(!next){
+    return;
+  }
   next.addEventListener('click', function(event) {
     event.preventDefault();
     flexSlideAnimation('next');
   });
-  var next = document.querySelector('.flexslider .previous')
-  next.addEventListener('click', function(event) {
+  var previous = document.querySelector('.flexslider .previous')
+  if(!previous){
+    return;
+  }
+  previous.addEventListener('click', function(event) {
     event.preventDefault();
     flexSlideAnimation('previous');
   });

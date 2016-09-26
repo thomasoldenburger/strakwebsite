@@ -3,6 +3,7 @@ window.onload = function() {
   addHowItWorksHandlers();
   addBenefitHandlers();
   addSlideHandlers();
+  addFlexSlideHandlers();
 };
 
 function addMenuHandlers(){
@@ -120,12 +121,59 @@ function next(el, seats) {
   }
 }
 
+function previous(el, seats) {
+  var next = el.previousSibling;
+  if(next) {
+    return next
+  } else {
+    return seats[seats.length - 1]
+  }
+}
+
 function slideAnimation(){
   var carousel = document.querySelector(".carousel");
   var seats = document.querySelectorAll('.carousel .container');
-  var el = document.querySelector('.is-ref');
+  var el = document.querySelector('.carousel .is-ref');
+  if(!carousel || !seats || !el){
+    return;
+  }
   el.classList.remove('is-ref');
   var new_seat = next(el, seats);
+  new_seat.classList.add('is-ref');
+  new_seat.style.order = 1;
+  for (i = 2; i <= seats.length; i++) {
+    new_seat = next(new_seat, seats);
+    new_seat.style.order = i;
+  }
+  carousel.classList.remove('is-set');
+  setTimeout(function(){ carousel.classList.add('is-set'); }, 50);
+}
+
+function addFlexSlideHandlers(){
+  var next = document.querySelector('.flexslider .next')
+  next.addEventListener('click', function(event) {
+    event.preventDefault();
+    flexSlideAnimation('next');
+  });
+  var next = document.querySelector('.flexslider .previous')
+  next.addEventListener('click', function(event) {
+    event.preventDefault();
+    flexSlideAnimation('previous');
+  });
+}
+
+function flexSlideAnimation(direction){
+  var carousel = document.querySelector(".flexslider .slides");
+  var seats = document.querySelectorAll('.flexslider .slide');
+  var el = document.querySelector('.flexslider .is-ref');
+  el.classList.remove('is-ref');
+  if(direction == 'next' ) {
+    var new_seat = next(el, seats);
+    carousel.classList.remove('is-reversing');
+  } else {
+    var new_seat = previous(el, seats);
+    carousel.classList.add('is-reversing');
+  }
   new_seat.classList.add('is-ref');
   new_seat.style.order = 1;
   for (i = 2; i <= seats.length; i++) {

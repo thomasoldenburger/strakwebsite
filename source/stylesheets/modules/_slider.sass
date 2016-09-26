@@ -1,5 +1,6 @@
 .flexslider
   margin: 0
+  position: relative
   padding: 0
   .slides
     li
@@ -18,33 +19,33 @@
         align-items: center
         padding-left: 48px
         margin-right: 72px
-    .pager
-      position: absolute
-      height: 90px
-      bottom: 0
-      right: 0
-      margin-right: 72px
-      .controlls
+  .pager
+    position: absolute
+    height: 90px
+    bottom: 0
+    right: 0
+    margin-right: 72px
+    .controlls
+      display: flex
+      .previous, .next
+        cursor: pointer
         display: flex
-        .previous, .next
-          cursor: pointer
-          display: flex
-          align-items: center
-          justify-content: center
-          width: 90px
-          height: 90px
-        .previous
-          background: $black
-          &:hover
-            background: darken($black, 5%)
-          &:after
-            content: url('../images/btnprev.svg')
-        .next
-          background: $blue
-          &:hover
-            background: darken($blue, 5%)
-          &:after
-            content: url('../images/btn-arrow.svg')
+        align-items: center
+        justify-content: center
+        width: 90px
+        height: 90px
+      .previous
+        background: $black
+        &:hover
+          background: darken($black, 5%)
+        &:after
+          content: url('../images/btnprev.svg')
+      .next
+        background: $blue
+        &:hover
+          background: darken($blue, 5%)
+        &:after
+          content: url('../images/btn-arrow.svg')
 
 
 @media all and (max-width: 768px)

@@ -5,32 +5,40 @@
     padding: 0 30px
   .partners
     display: flex
-    height: 290px
-    .partner
-      display: flex
-      align-items: center
-      justify-content: center
-      background: white
+    height: 170px
+    a
       flex: 1
+      display: flex
       border-right: 1px solid $border
-      &:nth-last-child(1)
-        border: none
+      .partner
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        background: white
+        transition: all .16s ease-in-out
+        &:nth-last-child(1)
+          border: none
+          img
+            width: 50%
         img
-          width: 30%
-      img
-        width: 50%
+          width: 100%
+      &:hover
+        .partner
+          transition: all .16s ease-in-out
+          padding-bottom: 24px
 
 
 @media all and (max-width: 768px)
   .mod-partners
     .partners
-      height: 190px
-      .partner
+      height: auto
+      flex-flow: row wrap
+      a
+        min-width: 33%
         border: none
-        display: flex
-        padding: 24px
-        &:nth-last-child(1)
+        .partner
+          display: flex
+          padding: 24px
           img
-            width: 80%
-        img
-          width: 100%
+            width: 100%

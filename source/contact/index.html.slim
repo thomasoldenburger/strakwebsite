@@ -3,7 +3,7 @@ layout: homepage
 ---
 
   section.mod-hero.contact style="background-image: url(/images/contact.jpg)"
-    .container
+    .container.start
       .overlay
         .wrapper
           h1 Wij zijn benieuwd naar wat wij voor jou kunnen betekenen!
@@ -21,6 +21,8 @@ layout: homepage
         p.xs 071- 1234567
       .col-6
         small mail gegevens
-        p.xs info@leaplines.com
-        p.xs jobs@leaplines.com
+        p.xs
+          a href="mailto:info@leaplines.com" info@leaplines.com
+        p.xs
+          a href="mailto:jobs@leaplines.com" jobs@leaplines.com
     =partial "mods/mod-quote"

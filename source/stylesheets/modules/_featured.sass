@@ -21,7 +21,37 @@
         background: $light-white
         p
           opacity: .8
-
+      &.reverse
+        .flex
+          position: relative
+          &:after
+            left: 100%
+            top: 50%
+            border: solid transparent
+            content: ""
+            height: 0
+            width: 0
+            position: absolute
+            pointer-events: none
+            border-color: rgba(32, 118, 218, 0)
+            border-left-color: $light-white
+            border-width: 18px
+            margin-top: -18px
+      .flex
+        position: relative
+        &:after
+          right: 100%
+          top: 50%
+          border: solid transparent
+          content: ""
+          height: 0
+          width: 0
+          position: absolute
+          pointer-events: none
+          border-color: rgba(32, 118, 218, 0)
+          border-right-color: $light-white
+          border-width: 18px
+          margin-top: -18px
 
 
 @media all and (max-width: 768px)
@@ -37,3 +67,6 @@
           height: 216px
         .description
           padding: 60px 30px
+        .flex
+          &:after
+            display: none

@@ -4,7 +4,7 @@ window.onload = function() {
   addBenefitHandlers();
   addSlideHandlers();
   addFlexSlideHandlers();
-  setInterval(function(){ slideAnimation(); }, 3000);
+  setInterval(function(){ slideAnimation(); }, 4000);
   addMenuHighlights();
 };
 

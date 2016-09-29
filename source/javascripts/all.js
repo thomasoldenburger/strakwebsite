@@ -11,11 +11,14 @@ window.onload = function() {
 function addMenuHighlights(){
   var links = [].slice.call(document.querySelectorAll(".menu-coll a"));
   links.forEach(function(menu){
+    var link = menu.href.split("/");
+    var path = link[link.length - 1]
+    console.log(path);
     if(location.pathname == "/"){
-      if(menu.href.search("/index.html") > 0){
+      if(path == "index.html"){
         menu.classList.add('active');
       }
-    } else if (menu.href.search(location.pathname) > 0){
+    } else if(location.pathname.search(path) > 0){
       menu.classList.add('active');
     } else {
       menu.classList.remove('active');

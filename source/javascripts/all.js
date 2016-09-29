@@ -5,7 +5,19 @@ window.onload = function() {
   addSlideHandlers();
   addFlexSlideHandlers();
   setInterval(function(){ slideAnimation(); }, 3000);
+  addMenuHighlights();
 };
+
+function addMenuHighlights(){
+  var links = [].slice.call(document.querySelectorAll(".menu-coll a"));
+  links.forEach(function(menu){
+    if (menu.href.search(location.pathname) > 0){
+      menu.classList.add('active');
+    } else {
+      menu.classList.remove('active');
+    }
+  });
+}
 
 function addMenuHandlers(){
   var menus = [].slice.call(document.querySelectorAll(".menu .toggle"));

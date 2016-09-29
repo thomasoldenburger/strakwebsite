@@ -11,7 +11,11 @@ window.onload = function() {
 function addMenuHighlights(){
   var links = [].slice.call(document.querySelectorAll(".menu-coll a"));
   links.forEach(function(menu){
-    if (menu.href.search(location.pathname) > 0){
+    if(location.pathname == "/"){
+      if(menu.href.search("/index.html") > 0){
+        menu.classList.add('active');
+      }
+    } else if (menu.href.search(location.pathname) > 0){
       menu.classList.add('active');
     } else {
       menu.classList.remove('active');

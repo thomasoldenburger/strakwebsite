@@ -13,19 +13,28 @@
 
 @media all and (max-width: 768px)
   .mod-customers
-    &.virtueelevent
-      .welkoop, .delta, .ah
-        display: block !important
     .customers
-      img
-        height: 24px
-      .blokker, .action, .ing, .ah, .welkoop
-        display: none
-      .bijenkorf
-        order: 0
-      .delta
-        order: 2
-        opacity: .8
-      .pathe
-        order: 1
+      flex-flow: row wrap
+      .customer
+        width: 50%
+        display: flex
+        justify-content: center
+        margin-bottom: 24px
+        &:nth-child(n+7)
+          margin: 0
+    // &.virtueelevent
+    //   .welkoop, .delta, .ah
+    //     display: block !important
+    // .customers
+    //   img
+    //     height: 24px
+    //   .blokker, .action, .ing, .ah, .welkoop
+    //     display: none
+    //   .bijenkorf
+    //     order: 0
+    //   .delta
+    //     order: 2
+    //     opacity: .8
+    //   .pathe
+    //     order: 1
 

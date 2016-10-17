@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66" height="48" viewBox="0 0 66 48" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="a" d="M59.3060462,8.52915 C59.3060462,5.51052931 60.1776128,2.68949483 61.6748632,0.253287931 L22.1579784,0.253287931 L8.98568707,0.253287931 C4.15584638,0.253287931 0.204158989,3.97742586 0.204158989,8.52915 C0.204158989,13.0808716 4.15584638,16.8050095 8.98568707,16.8050095 L22.1579784,16.8050095 L61.6748632,16.8050095 C60.1776128,14.3688026 59.3060462,11.5477707 59.3060462,8.52915 L59.3060462,8.52915 Z"/>
+    <polygon id="c" points=".204 10.598 61.675 10.598 61.675 .253 .204 .253"/>
+    <polygon id="e" points=".204 10.598 6.79 10.598 6.79 .253 .204 .253"/>
+    <polygon id="g" points=".204 10.598 4.595 10.598 4.595 .253 .204 .253"/>
+    <polygon id="i" points=".204 8.529 53.991 8.529 53.991 .253 .204 .253"/>
+    <polygon id="k" points=".204 8.529 6.79 8.529 6.79 .253 .204 .253"/>
+    <polygon id="m" points=".204 8.529 4.595 8.529 4.595 .253 .204 .253"/>
+    <polygon id="o" points=".204 10.598 52.893 10.598 52.893 .253 .204 .253"/>
+    <polygon id="q" points=".204 10.598 4.595 10.598 4.595 .253 .204 .253"/>
+    <polygon id="s" points="9.879 .771 9.879 .253 .204 .253 .204 .771 9.879 .771"/>
+    <polygon id="t" points="9.879 .771 9.879 .253 .204 .253 .204 .771"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <g transform="translate(0 28.966)">
+      <mask id="b" fill="white">
+        <use xlink:href="#a"/>
+      </mask>
+      <polygon fill="#FFFFFF" points="-2.54 -2.333 64.419 -2.333 64.419 19.391 -2.54 19.391" mask="url(#b)"/>
+    </g>
+    <g stroke="#00ADEE" stroke-width="2" transform="translate(0 28.966)">
+      <path d="M60.2674989 8.52915C60.2674989 5.51052931 61.1532441 2.68949483 62.6748517.253287931L22.5151207.253287931 9.12854366.253287931C4.22013209.253287931.204158989 3.97742586.204158989 8.52915.204158989 13.0808741 4.22013209 16.8050121 9.12854366 16.8050121L22.5151207 16.8050121 62.6748517 16.8050121C61.1532441 14.3688052 60.2674989 11.5477707 60.2674989 8.52915L60.2674989 8.52915 60.2674989 8.52915 60.2674989 8.52915zM22.1579784 8L53.9910157 8"/>
+      <path d="M23.2556693 12.667081L12.2787599 12.667081 8.98568707 12.667081C6.56418085 12.667081 4.5949233 10.811219 4.5949233 8.52915 4.5949233 6.24708103 6.56418085 4.39121897 8.98568707 4.39121897L12.2787599 4.39121897 34.2325787 4.39121897M36.6233425 4L59.6748523 4M28.744124 12L38.6233425 12M42.1117972 12L59.6748523 12M10.083378 8L16.6695237 8"/>
+    </g>
+    <g transform="translate(0 18.62)">
+      <mask id="d" fill="white">
+        <use xlink:href="#c"/>
+      </mask>
+      <polygon fill="#FFFFFF" points="-2.54 -2.333 64.419 -2.333 64.419 13.184 -2.54 13.184" mask="url(#d)"/>
+    </g>
+    <polygon stroke="#00ADEE" stroke-width="2" points=".204 29.219 61.675 29.219 61.675 18.874 .204 18.874"/>
+    <g transform="translate(8.782 18.62)">
+      <mask id="f" fill="white">
+        <use xlink:href="#e"/>
+      </mask>
+      <polygon fill="#D0E8F9" points="-2.54 -2.333 9.535 -2.333 9.535 13.184 -2.54 13.184" mask="url(#f)"/>
+    </g>
+    <g stroke="#00ADEE" stroke-width="2" transform="translate(8.782 18.62)">
+      <polygon points=".204 10.598 6.79 10.598 6.79 .253 .204 .253"/>
+      <path d="M14.4741418,5 L35.3302697,5"/>
+    </g>
+    <g transform="translate(50.494 18.62)">
+      <mask id="h" fill="white">
+        <use xlink:href="#g"/>
+      </mask>
+      <polygon fill="#D0E8F9" points="-2.54 -2.333 7.339 -2.333 7.339 13.184 -2.54 13.184" mask="url(#h)"/>
+    </g>
+    <polygon stroke="#00ADEE" stroke-width="2" points="50.698 29.219 55.089 29.219 55.089 18.874 50.698 18.874"/>
+    <g transform="translate(2.195)">
+      <mask id="j" fill="white">
+        <use xlink:href="#i"/>
+      </mask>
+      <polygon fill="#FFFFFF" points="-2.54 -2.333 56.735 -2.333 56.735 11.115 -2.54 11.115" mask="url(#j)"/>
+    </g>
+    <polygon stroke="#00ADEE" stroke-width="2" points="2.4 8.529 56.186 8.529 56.186 .253 2.4 .253"/>
+    <g transform="translate(10.977)">
+      <mask id="l" fill="white">
+        <use xlink:href="#k"/>
+      </mask>
+      <polygon fill="#D0E8F9" points="-2.54 -2.333 9.535 -2.333 9.535 11.115 -2.54 11.115" mask="url(#l)"/>
+    </g>
+    <g stroke="#00ADEE" stroke-width="2" transform="translate(10.977)">
+      <polygon points=".204 8.529 6.79 8.529 6.79 .253 .204 .253"/>
+      <path d="M14.4741418,4 L27.6464331,4"/>
+    </g>
+    <g transform="translate(45.005)">
+      <mask id="n" fill="white">
+        <use xlink:href="#m"/>
+      </mask>
+      <polygon fill="#D0E8F9" points="-2.54 -2.333 7.339 -2.333 7.339 11.115 -2.54 11.115" mask="url(#n)"/>
+    </g>
+    <polygon stroke="#00ADEE" stroke-width="2" points="45.209 8.529 49.6 8.529 49.6 .253 45.209 .253"/>
+    <g transform="translate(5.488 8.276)">
+      <mask id="p" fill="white">
+        <use xlink:href="#o"/>
+      </mask>
+      <polygon fill="#FFFFFF" points="-2.54 -2.333 55.638 -2.333 55.638 13.184 -2.54 13.184" mask="url(#p)"/>
+    </g>
+    <polygon stroke="#00ADEE" stroke-width="2" points="5.693 18.874 58.382 18.874 58.382 8.529 5.693 8.529"/>
+    <g transform="translate(12.075 8.276)">
+      <mask id="r" fill="white">
+        <use xlink:href="#q"/>
+      </mask>
+      <polygon fill="#D0E8F9" points="-2.54 -2.333 7.339 -2.333 7.339 13.184 -2.54 13.184" mask="url(#r)"/>
+    </g>
+    <g transform="translate(12.075 8.276)">
+      <polygon stroke="#00ADEE" stroke-width="2" points=".204 10.598 4.595 10.598 4.595 .253 .204 .253"/>
+      <path stroke="#00ADEE" stroke-width="2" d="M11.181069,5 L41.9164153,5"/>
+      <g transform="translate(41.712 20.69)"/>
+      <g transform="translate(41.712 37.241)"/>
+    </g>
+  </g>
+</svg>

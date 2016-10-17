@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="52" viewBox="0 0 77 52" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <polygon id="a" points="66.703 .308 66.703 19.559 7.729 19.559 7.729 .308 .037 .308 .037 27.259 74.396 27.259 74.396 .308"/>
+    <polygon id="c" points="29.524 .308 .037 .308 .037 10.575 59.011 10.575 59.011 .308"/>
+    <polygon id="e" points="29.524 14.425 34.652 14.425 34.652 .308 .037 .308 .037 23.409 29.524 23.409"/>
+    <polygon id="g" points="5.165 14.425 5.165 23.409 34.652 23.409 34.652 .308 .037 .308 .037 14.425"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <g transform="translate(0 14.118)">
+      <mask id="b" fill="white">
+        <use xlink:href="#a"/>
+      </mask>
+      <polygon fill="#FFFFFF" points="-3.169 -2.901 77.601 -2.901 77.601 30.468 -3.169 30.468" mask="url(#b)"/>
+    </g>
+    <polygon stroke="#00ADEE" stroke-width="2" points="66.703 14.425 66.703 33.677 7.729 33.677 7.729 14.425 .037 14.425 .037 41.377 74.396 41.377 74.396 14.425 66.703 14.425 66.703 14.425"/>
+    <g transform="translate(7.692 23.102)">
+      <mask id="d" fill="white">
+        <use xlink:href="#c"/>
+      </mask>
+      <polygon fill="#FFFFFF" points="-3.169 -2.901 62.216 -2.901 62.216 13.783 -3.169 13.783" mask="url(#d)"/>
+    </g>
+    <polygon stroke="#00ADEE" stroke-width="2" points="37.216 23.409 7.729 23.409 7.729 33.677 66.703 33.677 66.703 23.409 37.216 23.409 37.216 23.409"/>
+    <g transform="translate(37.18)">
+      <mask id="f" fill="white">
+        <use xlink:href="#e"/>
+      </mask>
+      <polygon fill="#C6E3F8" points="-3.169 -2.901 37.857 -2.901 37.857 26.618 -3.169 26.618" mask="url(#f)"/>
+    </g>
+    <polygon stroke="#00ADEE" stroke-width="2" points="66.703 14.425 71.831 14.425 71.831 .308 37.216 .308 37.216 23.409 66.703 23.409 66.703 14.425 66.703 14.425"/>
+    <g transform="translate(2.564)">
+      <mask id="h" fill="white">
+        <use xlink:href="#g"/>
+      </mask>
+      <polygon fill="#C6E3F8" points="-3.169 -2.901 37.857 -2.901 37.857 26.618 -3.169 26.618" mask="url(#h)"/>
+    </g>
+    <polygon stroke="#00ADEE" stroke-width="2" points="7.729 14.425 7.729 23.409 37.216 23.409 37.216 .308 2.601 .308 2.601 14.425 7.729 14.425 7.729 14.425"/>
+    <polygon stroke="#00ADEE" stroke-width="2" points="2.601 41.377 7.729 41.377 7.729 45.227 2.601 45.227 2.601 41.377"/>
+    <path stroke="#00ADEE" stroke-width="2" d="M5.16480641,45.2273448 L5.16480641,49.0776122 M3.88275513,49.0776122 L6.44685769,49.0776122"/>
+    <polygon stroke="#00ADEE" stroke-width="2" points="66.703 41.377 71.831 41.377 71.831 45.227 66.703 45.227 66.703 41.377"/>
+    <path stroke="#00ADEE" stroke-width="2" d="M69.2673718,45.2273448 L69.2673718,49.0776122 M67.9853205,49.0776122 L70.5494231,49.0776122"/>
+  </g>
+</svg>

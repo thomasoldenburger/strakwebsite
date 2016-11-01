@@ -1,0 +1,89 @@
+.content-block
+  margin-bottom: 48px
+  img
+    width: 100%
+  .text-block
+    margin-top: -120px
+    width: 100%
+    padding: 72px
+    background-color: white
+    display: flex
+    .col-6
+      padding: 0 36px
+      position: relative
+      background-color: white
+    .quote-block
+      display: flex
+      margin-bottom: 36px
+      img
+        margin-right: 36px
+        height: 36px
+        width: auto
+      h2
+        font-style: italic
+        margin-bottom: 24px
+      span
+        font-weight: 600
+        color: $pink
+        text-transform: uppercase
+        font-size: 14px
+        margin-bottom: 24px
+        padding: 0
+
+    h4
+      line-height: 36px
+      font-weight: 600
+
+    span
+      color: $pink
+      font-weight: 600
+      padding: 0 6px
+
+    p
+      padding-bottom: 48px
+
+    .read-more
+      display: flex
+      align-items: center
+      position: absolute
+      bottom: 0
+      width: 100%
+      img
+        width: 36px
+      a
+        color: $pink
+        font-size: 16px
+        font-weight: 700
+        margin-left: 12px
+        position: relative
+        &:after
+          z-index: 1
+          content: ""
+          width: 2px
+          bottom: -1px
+          height: 300px
+          left: -31px
+          background: #9B9B9B
+          position: absolute
+
+
+@media all and (max-width: 768px)
+  .content-block
+    img
+      width: 100%
+      height: 240px
+      object-fit: cover
+    .text-block
+      flex-flow: row wrap
+      padding: 24px
+      .col-6
+        width: 100%
+        padding: 0
+      .quote-block
+        img
+          display: none
+        .quote-content
+          p
+            padding: 0
+      .read-more
+        display: none
